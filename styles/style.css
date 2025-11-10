@@ -1,1 +1,297 @@
-/* место для вашего кода */
+.header 
+{
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px 100px 50px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+.header-logo
+{
+    width: 129px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.header-nav > ul 
+{
+    display: flex;
+    gap: 31.5px;
+    list-style: circle;
+}
+
+.header-nav > ul > li
+{
+    border-bottom: #000 1px solid;
+}
+
+.address
+{
+    width: 240px;
+    justify-self: end;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.address > a
+{
+    width: fit-content;
+    text-decoration: none;
+    border-bottom: #000 1px solid;
+}
+
+.cover
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 757px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cover-header
+{
+    padding: 165px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFF;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 30px;
+    line-height: 1.2;
+    gap: 20px 0;
+}
+
+.cover-header p
+{
+    height: 115px;
+}
+
+.cover-header-first
+{
+    align-self: flex-start;
+}
+
+.cover-header-second
+{
+    margin-right: -22px;
+    align-self: center;
+}
+
+.cover-header-third
+{
+    align-self: flex-end;
+    margin-right: -30px;
+}
+
+.cover-description
+{
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 22px;
+    word-spacing: 19px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.cover-description-button
+{
+    background: none;
+    color: #FFF;
+    border: #FFF 1px solid;
+    padding: 12px 32px;
+    word-spacing: normal;
+}
+
+.lots
+{
+    margin: 0 24px;
+}
+
+.lots-header
+{
+    font-size: 40px;
+    margin: 180px 0 27px 40px;
+}
+
+.lots-list
+{
+    column-gap: 25px;
+    list-style: none;
+    display: flex;
+}
+
+.lots-list > li
+{
+    position: relative;
+    flex: 1 1 0;
+    background: #000;
+}
+
+.lot-card
+{
+    height: 596px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
+}
+
+.lot-background
+{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+    padding: 0;
+}
+
+.lot-header,
+.lot-description {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.lot-header
+{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.lot-description
+{
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+.lots-more
+{
+    text-decoration: none;
+    width: fit-content;
+    display: block;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 20px;
+    border-bottom: #000 solid 1px;
+}
+
+.about
+{
+    margin-left: 24px;
+    margin-top: 120px;
+    margin-bottom: 180px;
+    display: flex;
+    height: 595px;
+}
+
+.about-left-column
+{
+    margin-left: 47px;
+}
+
+.about-logo-wrapper
+{
+    margin-top: 35px;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-logo
+{
+    width: 148px;
+}
+
+.about-right-column
+{
+    margin-top: 133px;
+    margin-left: 72px;
+}
+
+.about-decription-header
+{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.about-decription
+{
+    padding-right: 28px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 82px 50px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+.footer-nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.footer-nav > ul > li {
+    width: fit-content;
+    height: 21px;
+    border-bottom: #000 1px solid;
+}
+
+.footer-nav > ul > li > a
+{
+    text-decoration: none;
+}
+
+.footer-social
+{
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer-social img
+{
+    width: 48px;
+}
+
+.no-decor
+{
+    list-style: none !important;
+    border: none !important;
+}
